@@ -109,7 +109,7 @@
         <!--/.Carousel Wrapper-->
     </header>
 
-    <div class="container my-2">
+    <div class="container my-2" id="xd">
         <h2 class="mb-4 text-center">Listado de Obsequios</h2>
         <div class="row">
             <div class="col-lg-3 my-2">
@@ -128,7 +128,7 @@
                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus suscipit expedita eligendi iste. Nemo architecto facere dicta adipisci maxime eius asperiores, tempore voluptatem a doloremque, animi, non minus maiores qui!</p>
                         <!-- Button -->
                         <a href="#" class="btn btn-primary">Añadir al carrito</a>
-                        <a href="#" class="btn btn-primary">Mas</a>
+                        <a href="#" class="btn btn-primary" name="producto">Mas</a>
 
                     </div>
 
@@ -151,7 +151,7 @@
                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, repudiandae, pariatur. Cum corporis tempora, deleniti nisi eligendi, dicta illum obcaecati pariatur exercitationem, explicabo earum dolor iure quasi fugiat quae ex!</p>
                         <!-- Button -->
                         <a href="#" class="btn btn-primary">Añadir al carrito</a>
-                        <a href="#" class="btn btn-primary">Mas</a>
+                        <a href="#" class="btn btn-primary" name="producto">Mas</a>
 
                     </div>
 
@@ -174,7 +174,7 @@
                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem molestiae, maiores, reiciendis aut harum corrupti, sequi doloribus natus voluptates totam dolorem ducimus illo praesentium amet vitae. Officia eligendi ut, hic?</p>
                         <!-- Button -->
                         <a href="#" class="btn btn-primary">Añadir al carrito</a>
-                        <a href="#" class="btn btn-primary">Mas</a>
+                        <a href="#" class="btn btn-primary" name="producto">Mas</a>
 
                     </div>
 
@@ -197,7 +197,7 @@
                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda error non placeat sed excepturi quasi, obcaecati quisquam reiciendis modi nisi dolore blanditiis debitis dicta, similique neque vitae quidem quae laborum.</p>
                         <!-- Button -->
                         <a href="#" class="btn btn-primary">Añadir al carrito</a>
-                        <a href="#" class="btn btn-primary">Mas</a>
+                        <a href="#" class="btn btn-primary" name="producto">Mas</a>
 
                     </div>
 
@@ -220,7 +220,7 @@
                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius excepturi debitis voluptate maxime, natus numquam illum reprehenderit velit ducimus dolorum facilis earum, quidem dolores molestiae magnam non voluptatem hic sint!</p>
                         <!-- Button -->
                         <a href="#" class="btn btn-primary">Añadir al carrito</a>
-                        <a href="#" class="btn btn-primary">Mas</a>
+                        <a href="#" class="btn btn-primary" name="producto">Mas</a>
 
                     </div>
 
@@ -243,7 +243,7 @@
                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat deleniti, odio aperiam necessitatibus magnam et pariatur aspernatur obcaecati provident libero doloribus, assumenda veniam atque consequatur nesciunt iste. Assumenda quibusdam, odit.</p>
                         <!-- Button -->
                         <a href="#" class="btn btn-primary">Añadir al carrito</a>
-                        <a href="#" class="btn btn-primary">Mas</a>
+                        <a href="#" class="btn btn-primary" name="producto">Mas</a>
 
                     </div>
 
@@ -496,6 +496,20 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.16.0/js/mdb.min.js"></script>
+    <script type="text/javascript">
+		$('[name="producto"]').click(function(event) {
+			var id = $(this).attr('id');
+			//id+=".html"
+			$("#xd").load(id + ".html");
+		});
+		$('[name="form"]').click(function(event) {
+			$("#xd").load("contacto.html");
+		});
+		$('[name="partidos"]').click(function(event) {
+			$("#xd").load("partidos.html");
+		});
+
+	</script>
 </body>
 
 </html>
